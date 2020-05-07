@@ -1,0 +1,17 @@
+<aura:component controller="FishController">
+    
+    <aura:attribute name="fish" type="Fish__c[]" />
+ 
+    
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    
+    <c:fishSearch fish="{! v.fish }"/>
+    
+    
+    <aura:iteration items="{! v.fish }" var="fish">
+      
+        <c:fish fishName="{! fish.Name }"
+                price="{! fish.Price__c }"
+                available="{! fish.Available__c }" />
+    </aura:iteration>
+</aura:component>

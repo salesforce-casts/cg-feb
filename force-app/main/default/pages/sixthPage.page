@@ -1,0 +1,5 @@
+<apex:page standardController="Gadget__c">
+  
+  Hey!!!
+  
+</apex:page>

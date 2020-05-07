@@ -1,0 +1,10 @@
+<aura:component controller="FishController">
+	<aura:attribute name="fish" type="Fish__c[]" />
+    
+	<aura:attribute name="sText" type="String" />
+    
+	<div style="width:50%; margin-left: 10px;">
+        <lightning:input value="{! v.sText }" placeholder="which fish???"/>
+        <lightning:button label="Search" onclick="{! c.handleSearch }" />
+    </div>
+</aura:component>

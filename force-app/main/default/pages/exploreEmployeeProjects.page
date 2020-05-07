@@ -1,0 +1,19 @@
+<apex:page standardController="Employees_Projects__c" extensions="ExploreEmployeeProjects">
+    <apex:sectionHeader title="Employees Project Edit" subtitle="New Employees Project" />
+    <apex:form >
+        
+        <apex:pageBlock title="Employees Project Edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="save" action="{! foobar }" />
+                <apex:commandButton value="save & new" action="{! foobar }" />
+                <apex:commandButton value="cancel" action="{! foobar }" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                <apex:inputField value="{! Employees_Projects__c.Employee__c }"/>
+                <apex:inputField value="{! Employees_Projects__c.Project__c  }"/>                
+                <apex:inputField value="{! Employees_Projects__c.Date__c  }"/>                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

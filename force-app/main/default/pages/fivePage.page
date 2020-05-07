@@ -1,0 +1,13 @@
+<apex:page standardController="Gadget__c" extensions="gadgetExtension">
+    
+    <apex:dataTable value="{!accountList}" var="account">
+        <apex:column value="{! account.Name }"/>
+        <apex:column value="{! account.Rating }"/>
+        <apex:column value="{! account.Industry }"/>
+        <apex:column value="{! account.Id }"/>
+    </apex:dataTable>
+    
+    <apex:form >
+        <apex:commandButton value="save" action="{! foobar }"/>
+    </apex:form>
+</apex:page>

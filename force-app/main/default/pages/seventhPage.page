@@ -1,0 +1,5 @@
+<apex:page standardController="Gadget__c">
+  <apex:outputText >
+   {!   DATE(2020, 12, 08)   }
+  </apex:outputText>
+</apex:page>

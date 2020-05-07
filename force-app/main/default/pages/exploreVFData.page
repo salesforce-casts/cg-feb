@@ -1,0 +1,36 @@
+<apex:page controller="ExploreVFData" tabStyle="Employee__c">
+    <apex:sectionHeader title="Employee Edit" subtitle="New Employee" />
+    <apex:form >
+        
+        <apex:pageBlock title="Employee Edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="save" action="{! foobar }" />
+                <apex:commandButton value="save & new" action="{! foobar }" />
+                <apex:commandButton value="cancel" action="{! foobar }" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Employee Name</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Email</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Skill Set</apex:outputLabel>
+                    <apex:selectList multiselect="false" size="1">
+                        <apex:selectOption itemValue="Java" itemLabel="Java"/>
+                        <apex:selectOption itemValue="Apex" itemLabel="Apex"/>
+                        <apex:selectOption itemValue="Python" itemLabel="Python"/>
+                        <apex:selectOption itemValue="Ruby" itemLabel="Ruby"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,3 @@
+<apex:page standardController="Employees_Projects__c">
+	Hey this is a custom page
+</apex:page>
