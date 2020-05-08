@@ -1,0 +1,6 @@
+<aura:component >
+    
+    <aura:attribute name="greeting" type="String" />
+    What's the value that I see here {! v.greeting }
+	<c:componentFour />
+</aura:component>

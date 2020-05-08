@@ -1,0 +1,34 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <!-- LDS
+  		1/ When ever want to interact with data, that to only when a single record is concerned
+ 	-->
+    
+    <!-- special attribute  0010o00002ByySuAAJ -->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="accountRecord" type="Object" />
+    <aura:attribute name="errors" type="String" />
+    
+    <force:recordData aura:id="record"
+                      recordId="{! v.recordId }"
+                      mode="EDIT"
+
+                      fields="Id, Name, Industry"
+                      targetFields="{! v.accountRecord }"
+                      targetError="{! v.errors }"
+                      />
+    
+     <div>
+        <lightning:input value="{! v.accountRecord.Name }" />
+        <lightning:input value="{! v.accountRecord.Industry }" />        
+
+    </div>
+    
+    <aura:if isTrue="{! not(empty(v.errors)) }">
+        <div>
+            {! v.errors }
+        </div>
+    </aura:if>
+    
+    
+</aura:component>

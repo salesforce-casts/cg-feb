@@ -1,0 +1,13 @@
+<aura:component >
+    
+    <aura:attribute name="message" type="String" default="default message"/>
+    <aura:attribute name="greeting" type="String" default="default greeting"/>
+    <aura:attribute name="location" type="String" default="default location"/>
+    
+    
+    This is the message {! v.message }  <br />
+    This is the greeting {! v.greeting }    <br />
+    This is the location {! v.location } 	<br />
+    
+    <aura:handler event="c:cgAppEvent" action="{! c.handleReceiveData }" />
+</aura:component>
