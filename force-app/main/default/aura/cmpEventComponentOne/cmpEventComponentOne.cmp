@@ -1,0 +1,19 @@
+<aura:component >
+    
+    <aura:attribute name="greeting" type="String" />
+    <aura:attribute name="message" type="String" />
+    
+    <!-- receiver component -->
+    <aura:handler name="cgCmpEvent"
+                  event="c:cgCmpEvent"
+                  action="{! c.handleReceiveData }"/>
+    
+    
+    {! v.greeting }
+    {! v.message }
+    
+    Hey this is the data that I just received!
+    
+    <c:cmpEventComponentTwo />
+    <c:cmpEventComponentThree />
+</aura:component>

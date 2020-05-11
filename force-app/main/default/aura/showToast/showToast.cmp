@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    
+    <force:recordEdit aura:id="edit" recordId="{! v.recordId }"/>
+    
+    
+	<lightning:button label="Show Toast" onclick="{! c.handleShowToast }"></lightning:button>
+</aura:component>

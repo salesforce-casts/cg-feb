@@ -1,6 +1,8 @@
 <aura:component >
-    <aura:registerEvent name="cgAppEvent" type="c:cgAppEvent" />
     
+    <!-- 
+    <aura:registerEvent name="cgAppEvent" type="c:cgAppEvent" />
+    -->
     
     <lightning:button label="send data" onclick="{! c.handleSendData }" />
 </aura:component>

@@ -1,0 +1,7 @@
+<aura:component >
+    <!-- Source /Broadcaster -->
+    
+    <aura:registerEvent name="cgCmpEvent" type="c:cgCmpEvent"/>
+    
+    <lightning:button label="Send data to parent" onclick="{! c.handleSendData }" />
+</aura:component>

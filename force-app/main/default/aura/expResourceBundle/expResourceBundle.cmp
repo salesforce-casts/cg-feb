@@ -1,0 +1,3 @@
+<aura:component controller="exploreAuraEnabledController">
+	<p>This is a sample component</p>
+</aura:component>
