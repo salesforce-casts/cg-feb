@@ -1,0 +1,18 @@
+<apex:page >
+    
+    
+    <div id="ltng">
+        
+    </div>
+    
+    
+    <script>
+	    //specify the app the name
+    	$Lightning.use('c:embedComponentApp', function(){
+            //specify the component name that we wish to embed
+            $Lightning.createComponent()
+        });
+    
+    </script>
+    
+</apex:page>

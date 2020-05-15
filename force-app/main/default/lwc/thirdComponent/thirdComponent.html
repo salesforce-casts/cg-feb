@@ -1,0 +1,9 @@
+<template>
+  <ul>
+    <template for:each={aList.data} for:item="a">
+      <li key={a.Id}>
+        {a.Name} {a.Rating} {a.Industry}
+      </li>
+    </template>
+  </ul>
+</template>
