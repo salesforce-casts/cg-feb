@@ -12,5 +12,7 @@ public class futureClass {
     @future
     public static void foobar(String i){
         System.debug(' >>>>>>> ' +i);
+
     }
+    
 }

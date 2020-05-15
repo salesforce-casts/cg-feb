@@ -1,4 +1,4 @@
-global class AccountsBatch implements Database.Batchable<sObject>{
+global class AccountsBatch implements Database.Batchable<sObject>, Database.Stateful, Database.AllowsCallouts {
 
     global Database.QueryLocator start(Database.BatchableContext info){
     	//Here we will be using query locator
@@ -13,8 +13,11 @@ global class AccountsBatch implements Database.Batchable<sObject>{
         
     }
     
-    global void execute(Database.BatchableContext info, List<Account> scope){
-        
+    Integer i = 1;
+    
+    global void execute(Database.BatchableContext info, List<Sobject> teja){
+        i = i* 10;
+        System.debug(' 🚀 ' +i);
     }
     
     global void finish(Database.BatchableContext info){
